@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filip Beneš — CV & Portfolio</title>
+  <meta name="description"
+    content="Osobní CV web Filipa Beneše — student stavebního inženýrství, frontend developer a freelancer." />
+  <meta name="theme-color" content="#ba7d5a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="site-header wrap">
+    <a class="brand" href="#hero">
+      <span class="brand-mark"></span>
+      <span id="brandName">Filip Beneš</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">O mně</a>
+      <a href="#experience">Praxe</a>
+      <a href="#education">Vzdělání</a>
+      <a href="#projects">Projekty</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-toggle" aria-label="Přepnout motiv">☼</button>
+  </header>
+
+  <main>
+    <section class="hero wrap reveal" id="hero">
+      <div class="hero-main card card-hero">
+        <div class="hero-copy">
+          <span class="eyebrow">CV web / portfolio</span>
+          <h1 id="heroName">Filip Beneš</h1>
+          <p class="hero-role" id="heroRole"></p>
+          <p class="hero-summary" id="heroSummary"></p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="emailBtn" href="#contact">Napsat mi</a>
+            <a class="btn btn-secondary" id="githubBtn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn-secondary" id="linkedinBtn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <ul class="meta-list" id="metaList"></ul>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="portrait-shell">
+            <img id="profileImage" src="assets/profile.webp" alt="Filip Beneš" />
+          </div>
+
+          <div class="hero-panel-card card card-soft">
+            <div class="mini-label">Aktuálně</div>
+            <h2 id="currentHeadline">Student + freelance tvorba webů</h2>
+            <div class="stat-grid" id="statGrid"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section wrap reveal" id="about">
+      <div class="section-heading">
+        <span class="eyebrow">Profil</span>
+        <h2>O mně</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="card card-feature">
+          <p id="aboutText"></p>
+        </div>
+
+        <div class="sidebar-stack">
+          <div class="card card-soft">
+            <h3>Technické dovednosti</h3>
+            <div class="chip-list" id="technicalSkills"></div>
+          </div>
+
+          <div class="card card-soft">
+            <h3>Osobní a pracovní předpoklady</h3>
+            <div class="chip-list" id="softSkills"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap reveal" id="freelance">
+      <div class="section-heading">
+        <span class="eyebrow">Podnikání</span>
+        <h2 id="freelanceTitle">Freelance</h2>
+      </div>
+
+      <div class="business-layout">
+        <div class="card business-card">
+          <div>
+            <p class="business-kicker">OSVČ / digitální projekty</p>
+            <p id="freelanceDescription"></p>
+          </div>
+          <div class="social-links">
+            <a id="githubLink" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a id="linkedinLink" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="card card-soft">
+          <dl class="info-list" id="businessInfo"></dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap reveal" id="experience">
+      <div class="section-heading">
+        <span class="eyebrow">Praxe</span>
+        <h2>Pracovní zkušenosti</h2>
+      </div>
+      <div class="timeline" id="experienceTimeline"></div>
+    </section>
+
+    <section class="section wrap reveal" id="education">
+      <div class="section-heading">
+        <span class="eyebrow">Studium</span>
+        <h2>Vzdělání a jazyky</h2>
+      </div>
+
+      <div class="edu-layout">
+        <div class="timeline" id="educationTimeline"></div>
+        <div class="card card-soft languages-card">
+          <h3>Jazyky</h3>
+          <div class="language-list" id="languageList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap reveal" id="projects">
+      <div class="section-heading">
+        <span class="eyebrow">Highlight</span>
+        <h2>Vybrané projekty</h2>
+      </div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section wrap reveal" id="contact">
+      <div class="card contact-card">
+        <div>
+          <span class="eyebrow">Kontakt</span>
+          <h2 id="contactTitle"></h2>
+          <p id="contactText"></p>
+        </div>
+        <div class="contact-actions" id="contactActions"></div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer section wrap reveal card contact-card">
+    <div>
+      <p>Děkuji za návštěvu. V případě zájmu mě neváhejte kontaktovat.</p>
+      <p class="footer-meta">
+        Filip Beneš • IČO: 21248893 • Zapsán v živnostenském rejstříku
+      </p>
+    </div>
+    <p>© <span id="year"></span> Filip Beneš</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

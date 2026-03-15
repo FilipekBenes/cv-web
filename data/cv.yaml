@@ -1,0 +1,116 @@
+{
+  "site": {
+    "title": "Filip Beneš — CV & Portfolio",
+    "lang": "cs",
+    "themeColor": "#ba7d5a"
+  },
+  "personal": {
+    "name": "Filip Beneš",
+    "role": "Student stavebního inženýrství · Frontend developer · Freelancer",
+    "tagline": "Technicky orientovaný student s citem pro detail, systematickým přístupem a přesahem do webového vývoje i digitálních projektů.",
+    "summary": "Jsem studentem Fakulty stavební ČVUT se silným technickým zázemím a smyslem pro detail. Ke každému úkolu přistupuji systematicky a zodpovědně, s klidným přístupem k řešení problémů. Studium stavebního inženýrství vnímám jako dlouhodobý proces, ve kterém cíleně rozvíjím své technické a praktické dovednosti. Vedle studia se věnuji také tvorbě webů a webových aplikací.",
+    "location": "Praha 6",
+    "birthDate": "26. 12. 2004",
+    "email": "benesfi5@student.cvut.cz",
+    "phone": "+420 732 792 229",
+    "github": "https://github.com/FilipekBenes",
+    "linkedin": "https://www.linkedin.com/in/benes-filip/",
+    "photo": "assets/profile.webp"
+  },
+  "hero": {
+    "currentHeadline": "Student ČVUT"
+  },
+  "freelance": {
+    "title": "Freelance a podnikání",
+    "description": "Vedle studia působím také jako OSVČ. Zaměřuji se hlavně na tvorbu webů, frontend implementaci, správu digitálních projektů a praktické technické řešení zadání od návrhu až po realizaci.",
+    "items": [
+      { "label": "Status", "value": "OSVČ / podnikající fyzická osoba" },
+      { "label": "IČO", "value": "21248893" },
+      { "label": "Obchodní jméno", "value": "Filip Beneš" },
+      { "label": "Vznik", "value": "2024" },
+      { "label": "Online profily", "value": "GitHub + LinkedIn" }
+    ]
+  },
+  "stats": [
+    { "value": "2024", "label": "vítěz SOČ" },
+    { "value": "B2", "label": "angličtina" },
+    { "value": "OSVČ", "label": "od 2024" },
+    { "value": "ČVUT FSv", "label": "Stavební inženýrství" }
+  ],
+  "skills": {
+    "technical": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "WordPress",
+      "PHP",
+      "Python",
+      "Java",
+      "MS Office",
+      "AutoCAD",
+      "Revit / ArchiCAD",
+      "Technická dokumentace"
+    ],
+    "soft": [
+      "Systematičnost a spolehlivost",
+      "Analytické a logické myšlení",
+      "Trpělivost a důraz na detail",
+      "Schopnost učit se novým věcem"
+    ]
+  },
+  "experience": [
+    {
+      "period": "10/2022 - současnost",
+      "company": "WaveDigital s.r.o.",
+      "role": "Frontend developer (tvorba webů a webových aplikací)",
+      "description": "Tvorba webů a webových aplikací, frontend implementace a práce na digitálních řešeních pro klientské projekty. Navazuji tím na dřívější výpomoc s tvorbou webů ve stejné firmě."
+    },
+    {
+      "period": "8/2021 - 12/2021",
+      "company": "WaveDigital s.r.o.",
+      "role": "Výpomoc s tvorbou webů",
+      "description": "První praktická zkušenost s reálnými webovými projekty, samostatností a základní realizací klientských zadání."
+    },
+    {
+      "period": "7/2020 - 8/2022",
+      "company": "PREměření, a.s.",
+      "role": "Pomocné práce v opravě elektroměrů",
+      "description": "Technicky zaměřená výpomoc, pečlivost při práci a zodpovědný přístup k provozním úkolům."
+    }
+  ],
+  "education": [
+    {
+      "period": "2025 - současnost",
+      "school": "ČVUT Fakulta stavební",
+      "program": "Stavební inženýrství",
+      "description": "Aktuální studijní zaměření s důrazem na technické a inženýrské myšlení."
+    },
+    {
+      "period": "2024 - pozastaveno",
+      "school": "ČVUT Fakulta elektrotechnická",
+      "program": "Lékařská elektronika a bioinformatika",
+      "description": "Studium na technicky zaměřené fakultě se silným analytickým základem."
+    },
+    {
+      "period": "2020 - 2024",
+      "school": "Gymnázium Arabská, Praha 6",
+      "program": "Maturitní obor s rozšířenou výukou programování a matematiky",
+      "description": "Ukončené středoškolské studium doplněné o FCE certifikát z angličtiny (2024)."
+    }
+  ],
+  "languages": [
+    { "name": "Anglický jazyk", "level": "Úroveň B2 · FCE certifikát (2024)" }
+  ],
+  "projects": [
+    {
+      "title": "Digitální učebnicová platforma",
+      "subtitle": "Vítězný projekt SOČ 2024",
+      "period": "1/2023 - 6/2024",
+      "description": "Spoluautor koncepce a realizace digitální platformy pro práci s učebními materiály. Projekt získal 1. místo v celostátním kole soutěže SOČ v oboru Učební pomůcky."
+    }
+  ],
+  "contact": {
+    "title": "Pojďme se spojit",
+    "text": "Hledám příležitosti, kde můžu spojit technické vzdělání, pečlivost a digitální skillset. Napiš mi e-mail, mrkni na GitHub nebo se ozvi přes LinkedIn."
+  }
+}
