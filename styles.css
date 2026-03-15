@@ -240,9 +240,19 @@ img {
   color: white;
 }
 
+.btn-primary:hover {
+  border-color: var(--line);
+  background: var(--primary);
+}
+
 .btn-secondary {
   border-color: var(--line);
   background: var(--surface);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+  color: white;
 }
 
 .meta-list,
