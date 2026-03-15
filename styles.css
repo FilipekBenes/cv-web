@@ -11,7 +11,7 @@
   --primary-strong: #d59673;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
   --wrap: 1180px;
-  --radius: 28px;
+  --radius: 24px;
 }
 
 body.light {
@@ -76,7 +76,7 @@ img {
   inset: auto;
   width: 320px;
   height: 320px;
-  border-radius: 999px;
+  border-radius: 24px;
   filter: blur(65px);
   opacity: 0.22;
   pointer-events: none;
@@ -110,7 +110,7 @@ img {
   gap: 18px;
   padding: 14px 18px;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 24px;
   background: color-mix(in srgb, var(--card) 88%, transparent);
   backdrop-filter: blur(16px);
   box-shadow: var(--shadow);
@@ -133,7 +133,7 @@ img {
 .brand-mark {
   width: 12px;
   height: 12px;
-  border-radius: 999px;
+  border-radius: 24px;
   background: linear-gradient(135deg, var(--primary), var(--primary-strong));
 }
 
@@ -296,7 +296,7 @@ img {
 .language-pill,
 .contact-actions a,
 .social-links a {
-  border-radius: 999px;
+  border-radius: 24px;
   border: 1px solid var(--line);
   padding: 12px 14px;
   background: color-mix(in srgb, var(--surface) 92%, transparent);
@@ -324,7 +324,7 @@ img {
   aspect-ratio: 1 / 1;
   margin-inline: auto;
   padding: 12px;
-  border-radius: 999px;
+  border-radius: 24px;
   background: linear-gradient(135deg, rgba(186, 125, 90, 0.22), rgba(255, 255, 255, 0.04));
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
@@ -342,7 +342,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 999px;
+  border-radius: 24px;
 }
 
 .hero-panel-card {
@@ -369,7 +369,7 @@ img {
 
 .stat-item {
   padding: 18px;
-  border-radius: 20px;
+  border-radius: 24px;
   background: color-mix(in srgb, var(--surface) 95%, transparent);
   border: 1px solid var(--line);
 }
@@ -510,7 +510,7 @@ img {
   display: inline-flex;
   padding: 8px 12px;
   margin-bottom: 14px;
-  border-radius: 999px;
+  border-radius: 24px;
   background: color-mix(in srgb, var(--surface) 95%, transparent);
   border: 1px solid var(--line);
   color: var(--muted);
@@ -648,7 +648,7 @@ img {
   }
 
   .stat-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .info-list {
