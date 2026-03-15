@@ -147,6 +147,16 @@ function setupReveal() {
   document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
 }
 
+function setupMobileNav() {
+  const hamburger = qs('#hamburger');
+  const nav = qs('.nav');
+  const header = qs('.site-header');
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    header.classList.toggle('menu-open');
+  });
+}
+
 async function init() {
   try {
     const data = await loadData();
@@ -170,6 +180,7 @@ async function init() {
     fillContact(data);
     setupThemeToggle();
     setupReveal();
+    setupMobileNav();
   } catch (error) {
     console.error('Nepodařilo se načíst data CV:', error);
   }

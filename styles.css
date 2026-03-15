@@ -116,6 +116,13 @@ img {
   box-shadow: var(--shadow);
 }
 
+.site-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -156,6 +163,18 @@ img {
   cursor: pointer;
 }
 
+.hamburger {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
 .hero {
   padding: 38px 0 18px;
 }
@@ -176,6 +195,7 @@ img {
 
 .card-soft {
   background: linear-gradient(180deg, color-mix(in srgb, var(--surface-2) 90%, transparent), color-mix(in srgb, var(--surface) 90%, transparent));
+  -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
 }
 
@@ -550,7 +570,7 @@ img {
   .site-header {
     padding: 14px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .hero-copy h1 {
@@ -567,6 +587,11 @@ img {
     width: min(calc(100% - 22px), var(--wrap));
   }
 
+  .site-header-wrapper {
+    width: 100%;
+  }
+
+
   .card-hero,
   .card-feature,
   .business-card,
@@ -581,6 +606,45 @@ img {
   .nav {
     justify-content: center;
     gap: 14px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .site-header.menu-open {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px;
+  }
+
+  .site-header.menu-open .nav {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 10px 0 0;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .site-header.menu-open .nav a,
+  .site-header.menu-open .nav .theme-toggle {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    text-align: center;
+  }
+
+  .site-header.menu-open .nav a:last-child,
+  .site-header.menu-open .nav .theme-toggle:last-child {
+    border-bottom: none;
   }
 
   .stat-grid {
