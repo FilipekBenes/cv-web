@@ -38,3 +38,9 @@ Projekt je postavený pomocí:
 ├── assets/
 └── data/
     └── cv.yaml
+
+## License
+
+© Filip Beneš — All rights reserved.
+
+The source code, design, and content of this repository may not be copied, reused, modified, or redistributed without explicit permission from the author.
