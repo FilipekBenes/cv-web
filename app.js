@@ -27,7 +27,7 @@ function fillBasics(data) {
     data.personal.birthDate,
     data.personal.email,
     data.personal.phone
-  ].forEach((item) => metaList.appendChild(create('li', '', item)));
+  ].filter(item => item.trim()).forEach((item) => metaList.appendChild(create('li', '', item)));
 
   qs('#profileImage').src = data.personal.photo;
   qs('#profileImage').alt = `${data.personal.name} — profilová fotografie`;
@@ -37,7 +37,7 @@ function fillBasics(data) {
   qs('#linkedinBtn').href = data.personal.linkedin;
 
   const statGrid = qs('#statGrid');
-  data.stats.forEach((stat) => {
+  data.stats.filter(stat => stat.value.trim() && stat.label.trim()).forEach((stat) => {
     const card = create('div', 'stat-item');
     card.appendChild(create('strong', '', stat.value));
     card.appendChild(create('span', '', stat.label));
@@ -48,7 +48,7 @@ function fillBasics(data) {
 function fillSkills(data) {
   const render = (selector, items) => {
     const root = qs(selector);
-    items.forEach((item) => root.appendChild(create('span', 'chip', item)));
+    items.filter(item => item.trim()).forEach((item) => root.appendChild(create('span', 'chip', item)));
   };
 
   render('#technicalSkills', data.skills.technical);
@@ -62,7 +62,7 @@ function fillFreelance(data) {
   qs('#linkedinLink').href = data.personal.linkedin;
 
   const info = qs('#businessInfo');
-  data.freelance.items.forEach((item) => {
+  data.freelance.items.filter(item => item.label.trim() && item.value.trim()).forEach((item) => {
     info.appendChild(create('dt', '', item.label));
     info.appendChild(create('dd', '', item.value));
   });
@@ -70,7 +70,7 @@ function fillFreelance(data) {
 
 function renderTimeline(selector, items, mapping) {
   const root = qs(selector);
-  items.forEach((item) => {
+  items.filter(item => item[mapping.title].trim()).forEach((item) => {
     const article = create('article', 'timeline-item');
     article.innerHTML = `
       <div class="timeline-meta">${item[mapping.meta]}</div>
@@ -84,14 +84,14 @@ function renderTimeline(selector, items, mapping) {
 
 function fillLanguages(data) {
   const root = qs('#languageList');
-  data.languages.forEach((item) => {
+  data.languages.filter(item => item.name.trim() && item.level.trim()).forEach((item) => {
     root.appendChild(create('span', 'language-pill', `${item.name} — ${item.level}`));
   });
 }
 
 function fillProjects(data) {
   const root = qs('#projectGrid');
-  data.projects.forEach((project) => {
+  data.projects.filter(project => project.title.trim()).forEach((project) => {
     const article = create('article', 'project-card');
     article.innerHTML = `
       <div class="timeline-meta">${project.period}</div>
@@ -110,12 +110,12 @@ function fillContact(data) {
   const root = qs('#contactActions');
   const links = [
     { href: `mailto:${data.personal.email}`, label: 'E-mail' },
-    { href: `tel:${data.personal.phone.replace(/\s+/g, '')}`, label: 'Telefon' },
+    //{ href: `tel:${data.personal.phone.replace(/\s+/g, '')}`, label: 'Telefon' },
     { href: data.personal.github, label: 'GitHub' },
     { href: data.personal.linkedin, label: 'LinkedIn' }
   ];
 
-  links.forEach((item) => {
+  links.filter(item => item.href.trim()).forEach((item) => {
     const a = create('a', '', item.label);
     a.href = item.href;
     if (item.href.startsWith('http')) {
