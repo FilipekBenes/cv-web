@@ -340,7 +340,6 @@ img {
 
 .portrait-shell img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 999px;
 }
@@ -599,8 +598,11 @@ img {
   .project-card,
   .contact-card,
   .sidebar-stack .card,
-  .languages-card {
-    padding: 22px;
+  .languages-card,
+  .sidebar-stack .card,
+  .languages-card,
+  .card-soft {
+    padding: 16px;
   }
 
   .nav {
@@ -645,6 +647,11 @@ img {
   .site-header.menu-open .nav a:last-child,
   .site-header.menu-open .nav .theme-toggle:last-child {
     border-bottom: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 12px;
   }
 
   .stat-grid {
